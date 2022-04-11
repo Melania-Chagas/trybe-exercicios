@@ -12,6 +12,12 @@ info.recorrente='sim';
 console.log(info.recorrente);
 
 //exercicio 3:
+
 for(let key in info){
     console.log(key);
+}
+
+//exercício 4:
+for (key in info){
+    console.log(info[key]);
 }
