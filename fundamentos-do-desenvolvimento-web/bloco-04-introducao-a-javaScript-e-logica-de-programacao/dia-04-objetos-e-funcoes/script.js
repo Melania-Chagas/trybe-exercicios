@@ -62,3 +62,24 @@ let leitor = {
 let fullName = leitor.nome + " " + leitor.sobrenome;
 console.log("O livro favorito de " + fullName + " se chama " + leitor.livrosFavoritos[0].titulo);
 
+//exercicio 7:
+leitor = {
+    nome: 'Julia',
+    sobrenome: 'Pessoa',
+    idade: 21,
+    livrosFavoritos: [
+      {
+        titulo: 'O Pior Dia de Todos',
+        autor: 'Daniela Kopsch',
+        editora: 'Tordesilhas',
+      },
+      {
+        titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+        autor: 'JK Rowling',
+        editora: 'Rocco',
+      },
+    ],
+  };
+
+  //exercicio 8:
+  console.log(leitor.nome + " tem " + leitor.livrosFavoritos.length + " favoritos ");
