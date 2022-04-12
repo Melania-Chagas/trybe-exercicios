@@ -8,7 +8,7 @@ let info = {
 console.log('Bem-vinda,' + info.personagem);
 
 // exercício 2:
-info.recorrente='sim';
+info.recorrente = 'sim';
 console.log(info.recorrente);
 
 //exercicio 3:
@@ -21,3 +21,27 @@ for(let key in info){
 for (key in info){
     console.log(info[key]);
 }
+
+//exercicio 5:
+let infoTwo = {
+    personagem: 'Tio Patinhas',
+    origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
+    nota: 'O último MacPatinhas',
+    recorrente: 'sim',
+};
+
+for(key in info){
+    for(key in infoTwo){ 
+        if (key!== "recorrente"){
+            console.log(info[key] + " e " + infoTwo[key]);
+        }else if (info.recorrente === "sim" && infoTwo.recorrente === "sim"){
+            console.log("Ambos recorrentes");
+
+        } else{
+            console.log("pelo menos um não é recorrente");
+        }
+            
+     }
+        
+}
+
