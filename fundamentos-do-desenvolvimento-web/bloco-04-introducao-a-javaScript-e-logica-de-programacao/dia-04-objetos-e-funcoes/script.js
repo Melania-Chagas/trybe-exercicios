@@ -83,3 +83,13 @@ leitor = {
 
   //exercicio 8:
   console.log(leitor.nome + " tem " + leitor.livrosFavoritos.length + " favoritos ");
+
+ /////////////////////////////////////Parte II - Funções/////////////////////////////////////////////
+
+  //exercício 1:
+let word = ['arara']; 
+let palindrome = word.split('');
+  console.log (palindrome);
+  
+  
+
