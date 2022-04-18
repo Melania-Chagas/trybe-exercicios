@@ -55,7 +55,7 @@
  6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
        //exercício 1:
-       document.getElementsByTagName("p")[0].innerText = "Daqui 2 anos me vejo oficialmente casada, formada pela Trybe e, assim espero, trabalhando na área de desenvolvimento web em uma empresa que se preocupa com o desenvolvimento sustentável";
+       document.getElementsByTagName("p")[0].innerText = "Daqui 2 anos me vejo oficialmente casada, formada pela Trybe e, assim espero, trabalhando na área de desenvolvimento web em uma empresa que se preocupa com o desenvolvimento sustentável.";
 
        //exercício 2:
        let number2 = document.getElementsByClassName('main-content')[0];
@@ -66,8 +66,15 @@
        number3.style.backgroundColor = 'white';
 
        //exercício 4:
-       number4 = document.getElementsByTagName('h1')[0];
+       let number4 = document.getElementsByTagName('h1')[0];
        number4.innerText = 'Exercício 5.1 - JavaScript';
+
+       //exercício 5:
+       let number5 = document.getElementsByTagName('p');
+        for (let index = 0; index <number5.length; index += 1 ){
+          number5[index].style.textTransform = "uppercase";
+        }
+       
         
       
 
